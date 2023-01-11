@@ -1,0 +1,81 @@
+@media (max-width:480px) {
+    main h2 {
+        font-size: 24px;
+    }
+
+    .container {
+        background-image: url(../img/layered-waves-haikei-mobile.svg);
+    }
+}
+
+
+@media (max-width:720px) {
+
+
+    /* Primeira div onde ficam a criação de tarefas */
+    .create-task {
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+        margin-top: 10px;
+        padding: 5px 0 5px 0;
+
+    }
+
+    /* Classe do inptut de texto */
+    .task-name {
+        height: 40px;
+        font-size: 15px;
+    }
+
+
+    /* Alinha o input de texto e os botões para o tamanho maximo da tela */
+    .task-name {
+        width: 100%;
+    }
+
+    .task-name,
+    .btn-create-task,
+    .btn-remove-task {
+
+        display: flex;
+        justify-content: center;
+        margin-bottom: 15px;
+        margin-right: 0;
+    }
+
+    .btns {
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .btns .btn-create-task,
+    .btn-remove-task {
+        height: 50px;
+        width: 150px;
+
+
+    }
+
+    main {
+        padding: 5px;
+        width: 100%;
+    }
+
+    /* O que faremos hoje? */
+    main h2 {
+        font-size: 25px;
+    }
+
+    /* Label criada com evento dos botoes */
+    .created-label {
+        margin-left: 5px;
+        font-size: 17px;
+    }
+
+    /* Checkbox criada com o evento dos botões */
+    .created-task {
+        width: 15px;
+        height: 15px;
+    }
+}

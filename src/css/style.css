@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins';
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-color: #333;
+    background-image: url(../img/layered-waves-haikei.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+    
+}
+
+main {
+    width: 70%;
+    height: 70%;
+    display: flex;
+    padding: 10px 0 0 0;
+    flex-direction: column;
+    
+}
+
+/* O que faremos hoje? */
+main h2 {
+    text-align: center;
+    font-size: 30px;
+    color: rgb(246, 233, 250);
+}
+
+/* Div da crição de tarefas */
+.create-task {
+    display: flex;
+    justify-content: left;
+    width: 100%;
+
+}
+
+/* input de texto */
+.task-name {
+
+    width:60%;
+    padding: 5px;
+    border-radius: 2px;
+    border: none;
+    margin-right: 20px;
+    font-family: 'Poppins';
+}
+
+ /* Div para armazenar os botões */
+.btns{
+    display: flex;
+}
+
+/* Botões de criar e remover tarefas respectivamente */
+.btn-create-task,
+.btn-remove-task {
+    height: 28px;
+    padding: 10px;
+    width: 110px;
+    border-radius: 2px;
+    border: none;
+    transition: 0.5s ease-in-out;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: rgb(111, 108, 111);
+    align-items: center;
+    flex-direction: row;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 5px;
+    margin-left: 5px;
+    font-family: 'Poppins';
+    color: rgb(234, 226, 226);
+}
+
+/* Hover dos botões */
+.btn-remove-task:hover{
+    background-color: rgb(161, 156, 156);
+    color: black;
+}
+.btn-create-task:hover{
+    background-color: rgb(161, 156, 156);
+    color: black;
+}
+
+/* icones dos botoes */
+.btn-remove-task img,
+.btn-create-task img {
+    margin-left: 3px;
+    height: 12px;
+
+}
+/* Estilização da barra de rolagem das tarefas criadas */
+.tasks::-webkit-scrollbar{
+    width: 8px;
+    
+
+}
+.tasks::-webkit-scrollbar-track{
+    background-color: rgb(111, 108, 108);
+    border-radius: 5px;
+}
+.tasks::-webkit-scrollbar-thumb{
+    background-color: rgb(65, 63, 63);
+    border-radius: 20px;
+    border: 1px solid rgba(196, 189, 189, 0.415);
+}
+
+/* Div que receberá os elementos criados via JS */
+.tasks {
+    width: 100%;
+    margin-top: 5px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    overflow: auto;
+}
+
+/* Div criada com evento dos botões */
+.createdTask {
+    display: flex;
+    align-items: center;
+    padding: 3px 0;
+    border-bottom: 1px solid rgba(246, 233, 250, 0.299);
+    margin-bottom: 10px;
+}
+
+/* Label criada com evento dos botoes */
+.created-label {
+    margin-left: 5px;
+    font-size: 20px;
+    color: rgb(246, 233, 250);
+}
+
+/* Checkbox criada com o evento dos botões */
+.created-task {
+    width: 20px;
+    height: 20px;
+}
